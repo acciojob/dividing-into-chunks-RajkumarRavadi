@@ -7,7 +7,7 @@ const divide = (arr, n) => {
 	let chunkSum = 0;
 
 	//start travering the array
-	for(int i=0; i<n; i++){
+	for(int i=0; i<arr.length; i++){
 		if(chunkSum + arr[i] <= n){
 			chunkArray.push(arr[i]);
 			chunkSum = chunkSum + arr[i];
