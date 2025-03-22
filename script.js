@@ -4,17 +4,17 @@ const divide = (arr, n) => {
   //create a result array
 	let result = [];
 	let chunkArray = [];
-	let chunkSum = 0;
+	let chunkSum = 0; 
 
 	//start travering the array
-	for(int i=0; i<arr.length; i++){
+	for(let i=0; i<arr.length; i++){
 		if(chunkSum + arr[i] <= n){
 			chunkArray.push(arr[i]);
 			chunkSum = chunkSum + arr[i];
 		}else{
 			result.push(chunkArray);
-			chunkArray = arr[i];
-			chunkSum = arr[i];
+			chunkArray = [arr[i]];
+			chunkSum = arr[i]; 
 		}
 	}
 
